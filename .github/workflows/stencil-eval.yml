@@ -9,6 +9,9 @@ on:
     - cron: '00 06 * * 1-5'
   workflow_dispatch:
     # allows for manual incovations
+  push:
+    branches:
+      - '**'
 
 # When pushing a new commit we should
 # cancel the previous test run to not
