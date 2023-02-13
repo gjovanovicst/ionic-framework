@@ -3,6 +3,9 @@ description: 'Build Ionic Core with an Evaluation Copy of Stencil'
 runs:
   using: 'composite'
   steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: feature-7.0
     - uses: actions/setup-node@v3
       with:
         node-version: 16.x
